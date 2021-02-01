@@ -9,20 +9,53 @@
     <h1>In this project I learned how to display images in different projections</h1>
     
     <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
-    <p>You can write a paragraph here</p>
+    <p>To show map projections and their distortions, I first looked up these different projections on QGIS under the Reference Coordinate System. I was careful to look up the name as well as the numbers and letters that corresponded with each projection so I could make note of the name of each projection, and save each as a .png file. To each projection, I added Tissot's Indicatrix to help visualize the distortion to each projection. Tissot's Indicatric could be found as a plug-in available on QGIS. I then added each of the map projections as a .png file into the "maps" folder and gave a brief description of each projection noting what each is useful for, and what kinds of distortions each produce.</p>
     
     <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Some observations: This projection appears to show some distortion towards the North and South poles. Unlike a Mercator projection, we can see that there is compression rather than stretching as indicated by the Tissot's indicatrices.</h3>
     <a href=".//maps/4326.png">
     <img src=".//maps/4326.png" alt="WGS84" width='500px'>
     </a>
     <h2>Aitoff Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Some observations: This projection appears to "bend" along longitude lines that are closer to 180 degrees longitude. This projection might be more useful with latitude lines.</h3>
     <a href=".//maps/54043.png">
     <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
     </a>
-    <h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2>
-    <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
+    <h2>Psuedo Mercator Projection</h2>
+    <h3>Some observations: This projection is incredibly useful when taking into account cardinal directions. The problem with this projection are the distortions that exist towards the poles. Specifically, Greenland and Antarctica are much bigger than they really should be.</h3>
+    <a href=".//maps/psuedo_meractor_projection_3857.png">
+    <img src=".//maps/psuedo_meractor_projection_3857.png" alt="Mercator" width='500px'>
+    </a>
+    <h2>World Cylindrical Equal Area Projection</h2>
+    <h3>Some observations:  As the name implies, this projection appears to show a cylindrical model of the Earth with respect to equal area. There is considerable distorted compression around the poles however.</h3>
+    <a href=".//maps/54034.png">
+    <img src=".//maps/54034.png" alt="Cylindrical" width='500px'>
+    </a>
+    <h2>Winkel I Projection</h2>
+    <h3>Some observations: This projection is similar to the Aitoff projection where there is some distortion with longitude values. However, we can see that there is more of a stretched distortion and that Antarctica appears to be much bigger than it should be.</h3>
+    <a href=".//maps/53018.png">
+    <img src=".//maps/53018.png" alt="Winkel" width='500px'>
+    </a>
+    <h2>World Equidistant Conic Projection</h2>
+    <h3>Some observations: This projection appears to be an azimuthal projection where there is equal distance given. However, there is considerable distortion given to Antarctica and the southern Hemisphere as they wrap around the entirety of the projection. This projection would be useful for viewing the Arctic circle or northern hemisphere.</h3>
+    <a href=".//maps/54027.png">
+    <img src=".//maps/54027.png" alt="Conic" width='500px'>
+    </a>
+    <h2>North Pole Azimuthal Equidistant Projection</h2>
+    <h3>Some observations: This is similar to the World Equidistant Conic Projection where equal distance is taken into consideration with respect to a conic projection. The southern hemisphere as well as the Antarctic region where they are both wrapped around the entirety of the projection. As such, this projeciton would really only be useful for viewing the northern hemisphere or the Arctic region.</h3>
+    <a href=".//maps/102016.png">
+    <img src=".//maps102016.png" alt="Azimuthal" width='500px'>
+    </a>
+    <h2>The World from Space Projection</h2>
+    <h3>Some observations: This projection shows what the Earth would look like if viewed from space. It is a fairly accuate projection, but only shows a limited amount of features of the Earth and does not show some regions like Antarctica at all</h3>
+    <a href=".//maps/102038.png">
+    <img src=".//maps102038.png" alt="Space" width='500px'>
+    </a>
+    <h2>Sphere Equidistant Cylindrical Projection</h2>
+    <h3>Some obversations: This projection is similar to the Mercator projection such that it is useful for cardinal directions. However, there appears to be distortion in the center of the projection rather than at the poles. Africa, for instance, is much bigger than it should be.</h3>
+    <a href=".//maps/53002.png">
+    <img src=".//maps53002.png" alt="Equidistant" width='500px'>
+    </a>
     <p></p>
     <h2>Data used for this project</h2>
     <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
